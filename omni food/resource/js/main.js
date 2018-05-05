@@ -78,4 +78,20 @@ $('.js--nav-icon').click(function(){
   }
 });
 
+// Map
+
+var map = new GMaps({
+  div: '.map',
+  lat: 18.7875329,
+  lng: 99.0003818,
+  zoom: 14
+});
+map.addMarker({
+  lat:18.7895729,
+  lng:98.9873818,
+  title:'Chiang Mai',
+  infoWindow:{
+    content: '<p>Our Chiang Mai HQ</p>'
+  }
+})
 });
