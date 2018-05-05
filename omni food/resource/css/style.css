@@ -15,6 +15,14 @@ html{
 
 }
 
+.clearfix{zoom:1}
+.clearfix:after{
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 /*-------------------*/
 /* reusable component*/
 /*-------------------*/
@@ -24,7 +32,8 @@ html{
 	margin: 0 auto;
 }
 section{
-	padding: 80px 0;
+	padding: 80px 0!important;
+clear: both;
 }
 
 .box{
@@ -182,9 +191,11 @@ header{
 
 .section-features{
 	text-align: center;
+
 }
 .section-features .long-copy{
 	margin-bottom: 40px;
+
 }
 
 
@@ -192,10 +203,10 @@ header{
 
 .section-meals{
 	padding: 0;
-}
-.meals-showcase{
+	padding-bottom: 0!important;
 	list-style: none;
 	width: 100%;
+
 
 }
 .meals-showcase li{
@@ -223,4 +234,48 @@ background-color: #000;
 .meal-photo img:hover{
 	opacity: 1;
 	transform: scale(1.03);
+}
+
+/*------HOW IT WORKS--------*/
+.section-steps{
+
+	background: #f2f2f2;
+height: 100vh;
+}
+.steps-box:first-child{
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 30px;
+}
+.steps-box:last-child{
+	padding-left: 3%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.app-screen{
+	width: 40%;
+}
+.works-step{
+	margin-bottom: 40px;
+}
+.works-step:last-of-type{
+	margin-bottom: 50px;
+}
+.works-step div{
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 25px;
+}
+.btn-app img{
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
 }
