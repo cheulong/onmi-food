@@ -1,6 +1,6 @@
 /*  SECTIONS  ============================================================================= */
 
-.section {
+section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
@@ -83,7 +83,7 @@
 }
 
 .span-2-of-3 {
-	width: 66.13%; 
+	width: 66.13%;
 }
 
 .span-1-of-3 {
